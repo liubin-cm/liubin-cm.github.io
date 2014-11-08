@@ -1,0 +1,198 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Meta, title, CSS, favicons, etc. -->
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Bootstrap, a sleek, intuitive, and powerful mobile first front-end framework for faster and easier web development.">
+<meta name="keywords" content="HTML, CSS, JS, JavaScript, framework, bootstrap, front-end, frontend, web development">
+<meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+
+<title>
+  
+    keep moving and thinking
+  
+</title>
+<!-- Bootstrap core CSS -->
+<link href="../css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Documentation extras -->
+<link href="../css/default.css" rel="stylesheet">
+<link href="../css/style.css" rel="stylesheet">
+<!--[if lt IE 9]><script src="../assets/js/ie8-responsive-file-warning.js"></script><![endif]-->
+
+<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+<!--[if lt IE 9]>
+  <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+<![endif]-->
+
+<!-- Favicons -->
+  </head>
+
+  <body>
+        <header class="navbar navbar-static-top bs-docs-nav" id="top" role="banner">
+  <div class="container">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a href="../" class="navbar-brand">Bootstrap</a>
+    </div>
+    <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+      <ul class="nav navbar-nav">
+        <li>
+          <a href="../getting-started">Getting started</a>
+        </li>
+        <li class="active">
+          <a href="../css">CSS</a>
+        </li>
+        <li>
+          <a href="../components">Components</a>
+        </li>
+        <li>
+          <a href="../javascript">JavaScript</a>
+        </li>
+        <li>
+          <a href="../customize">Customize</a>
+        </li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="http://expo.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Expo']);">Expo</a></li>
+        <li><a href="http://blog.getbootstrap.com" onclick="_gaq.push(['_trackEvent', 'Navbar', 'Community links', 'Blog']);">Blog</a></li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div class="container">
+  <!--div class="wrapper content"-->
+      <style>
+  header, footer, #sidebar { display:none !important; }
+  html, body { background-color:black; width:100% !important; }
+  html { zoom:70%; text-shadow: #000 0 1px 1px; }
+  body {  color:#fff; }
+  ul { list-style:none; padding-left:0 !important; }
+  li { margin-left:0 !important; }
+  li > a {
+    display:block;
+    padding:5px 5px 5px 15px;
+    border-top:1px solid #333;
+    font-family:'helvetica neue','helvetica',sans-serif;
+    width:280px;
+  }
+  li > a > span {
+    display:block;
+    padding:0; margin:0;
+    white-space:nowrap; overflow:hidden; text-overflow: ellipsis;
+    width:280px;
+  }
+  li > a:link, li > a:visited { color:#999; }
+  li > a:active, li > a:hover { color:white; }
+  li > a info { display:block; color:#666; }
+  ul.navigation {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+  }
+  ul.navigation li a {
+    border-top:none;
+    border-bottom:1px solid #333;
+    padding:0 5px 0 15px;
+    line-height:44px;
+  }
+  h2 { margin-top:15px; text-align:center; color:white; }
+  a.logo, p.h { display:block; margin:10px 5px 5px 0; text-align:center; }
+  p.h {  }
+</style>
+<script>
+  function openInParent(self) {
+    window.parent.document.location = self.href;
+    return false;
+  }
+</script>
+<a target="_top" href="/" class="logo"><img src="/res/signature-2-inverted-2.png" width="160" height="50" alt="Signature"></a>
+<ul class="navigation">
+  <li><a target="_top" href="/photos/" title="A selection of recent photography">Photography</a></li>
+  <li><a target="_top" href="/projects/" title="Projects I am or was involved in">Projects</a></li>
+  <li><a target="_top" href="/archive/"class="active" title="Archived articles">Archive</a></li>
+  <li><a target="_top" href="/about/">About me</a></li>
+  <li><a></a></li>
+</ul>
+<p class="h"><b>Recent posts</b></p>
+<ul>
+
+  <li class="posts">
+    <a onclick="return openInParent(this)" target="_top" href="/2014/01/19/Learn_jekyll.html">
+      <span>Learn jekyll</span>
+      <info>Jan 19, 2014</info>
+    </a>
+  </li>
+
+  <li class="posts">
+    <a onclick="return openInParent(this)" target="_top" href="/2013/07/09/dbx2013.html">
+      <span>experience jekyll</span>
+      <info>Jul 09, 2013</info>
+    </a>
+  </li>
+
+</ul>
+
+    <!--/div-->
+    
+    
+    
+    
+  <!--   
+    <script>
+  // curry pre < code to be able to get prettified
+  // If the first line is
+  //   #!-langname\n
+  // Then that line is removed from the code and "langname" is given to prettify.
+  // If "langname" is "none", that prettify is not applied at all.
+  var n,i,L,cn,lang,v = document.getElementsByTagName('pre');
+  var m,lang_re = /^#\!-([a-zA-Z0-9_-]+)\n/;
+  for (i=0,L=v.length;i<L;++i) {
+    n = v.item(i);
+    if ((cn = n.firstChild) && cn.nodeName == 'CODE') {
+      lang = null;
+      if (cn.firstChild.nodeType === Node.TEXT_NODE) {
+        m = lang_re.exec(cn.firstChild.nodeValue);
+        if (m) {
+          lang = m[1].toLowerCase();
+          cn.firstChild.nodeValue = cn.firstChild.nodeValue.substr(m[0].length);
+          if (lang === 'none') {
+            continue;
+          }
+        }
+      }
+      n.setAttribute('class', 'prettyprint'+(lang ? ' lang-' + lang : ''));
+    }
+  }
+</script>
+<script async src="/res/prettify.js"></script>
+
+        <script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-9078556-2']);
+  _gaq.push(['_trackPageview']);
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
+ -->            <!-- JiaThis Button BEGIN -->
+<script type="text/javascript" src="http://v3.jiathis.com/code/jiathis_r.js?move=0" charset="utf-8"></script>
+<!-- JiaThis Button END -->
+
+</div>
+    
+
+  </body>
+</html>
