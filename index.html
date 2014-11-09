@@ -1,27 +1,26 @@
 ---
-layout: default
-title: TechTinkering
+layout: firstpage
+title: hello
 menuOption: home
 ---
-<!-- <header class="site-header" role="banner" itemscope="itemscope" itemtype="http://schema.org/WPHeader">
-    <div class="wrap">
-        <div class="title-area">
-            <h1 class="site-title" itemprop="headline">
-                <a href="http://www.skyafar.org/" title="Skyafar Technology Blog">Skyafar Technology Blog</a>
-            </h1>
-            <p class="site-description" itemprop="description">
-                Web tips, Social media guide, Wordpress Tutorials
-            </p>
-        </div>
-    </div>
-</header> -->
 
-<div class="site-inner">
-  <div class="wrap">
-    <div class="content-sidebar-wrap">
-      <main class="home_content" role="main" itemprop="mainContentOfPage" itemscope="itemscope" itemtype="http://schema.org/Blog">
-        <!-- <ul id="posts"> -->
-          {% for post in site.posts limit: 15 %}
+<!--body-->
+      <!-- Docs page layout -->
+    <div class="bs-docs-header" id="content">
+      <div class="container">
+        <h1>Quality And Effciency</h1>
+        <p>Improve software quality and efficency。</p>
+        
+      </div>
+    </div>
+
+    <div class="container bs-docs-container">
+
+      <div class="row">
+        <div class="col-md-9" role="main">
+          <div class="bs-docs-section">
+
+             {% for post in site.posts limit: 15 %}
             <!-- <li class='post_seperator'> -->
               <article class='post_seperator entry'>
                               {% include post_summary.html %}
@@ -29,141 +28,25 @@ menuOption: home
 
             <!-- </li> -->
           {% endfor %}
-        <!-- </ul> -->
-
-        <div class="moreArticles">
-          <a href="/archive#item15">More Articles in Archive</a>
+  
+          </div>
         </div>
-      </main>
-      <aside class="sidebar sidebar-primary widget-area" role="complementary" itemscope="itemscope" itemtype="http://schema.org/WPSideBar">
-
-
-  <h2>Retro</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "Retro" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="moreArticles">
-    <a href="/tag/retro#item5">More Retro Articles</a>
-  </div>
-
-  <h2>Programming</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "Programming" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="moreArticles">
-    <a href="/tag/programming#item5">More Programming Articles</a>
-  </div>
-
-  <h2>Emulation</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "Emulation" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="moreArticles">
-    <a href="/tag/emulation#item5">More Emulation Articles</a>
-  </div>
-
-  <h2>CP/M</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "CP/M" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="moreArticles">
-    <a href="/tag/cpm#item5">More CP/M Articles</a>
-  </div>
-
-  <h2>Linux</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "Linux" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="moreArticles">
-    <a href="/tag/linux#item5">More Linux Articles</a>
-  </div>
-
-  <h2>Commodore</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "Commodore" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <h2>PDP-8</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "PDP-8" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-
-  <h2>Assembly</h2>
-  <ul class="briefPosts">
-    {% assign numFound = 0 %}
-    {% for post in site.posts %}
-      {% if post.tags contains "Assembly" %}
-        {% assign numFound = numFound | plus: 1 %}
-        {% if numFound <= 5 %}
-          <li><a href="{{ post.url }}">{{ post.title }}</a></li>
-        {% endif %}
-      {% endif %}
-    {% endfor %}
-  </ul>
-  <div class="moreArticles">
-    <a href="/tag/assembly#item5">More Assembly Articles</a>
-  </div>
-
-      </aside>
-    </div>
-  </div>
+        <div class="col-md-3">
+          <div class="bs-docs-sidebar hidden-print hidden-xs hidden-sm affix-top" role="complementary">
+            <ul class="nav bs-docs-sidenav">
+                {% for post in site.posts limit: 15 %}
+                <li class=""><a href="./#{{ post.title }}">{{ post.title }}</a>
+                </li>
+                {% endfor %}
+            </ul>
+            </div>
 </div>
+
+</div>
+</div>
+
+
+
 
 
 
